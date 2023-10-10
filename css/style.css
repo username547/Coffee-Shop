@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Urbanist:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color: #14110E;
+}
+
+ul li,
+ol li {list-style: none;}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+button {
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.primary-btn {
+    padding: 20px 36px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #C99E71;
+}
+
+.primary-btn:hover {
+    background-color: #BD864B;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 75px;
+}
+
+.header-container {
+    padding: 0 10px;
+}
+
+/* HEADER */
+
+#header-section {
+    padding: 32px 0;
+    background-color: #1C1814;
+}
+
+.header-content,
+.nav,
+.nav-list,
+.header-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav-list {
+    gap: 48px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.nav-link-selected {
+    font-weight: 700;
+    color: #C99E71;
+    cursor: default;
+}
+
+.nav-link:hover,
+.header-action-search:hover,
+.header-action-cart:hover {
+    color: #C99E71;
+}
+
+.logo {
+    width: 72px;
+    height: 60px;
+}
+
+.header-action {
+    gap: 48px;
+    margin-left: 48px;
+}
+
+.header-action-search,
+.header-action-cart {
+    font-size: 30px;
+}
+
+/* BANNER */
+
+#banner-section {
+    background: url(../img/banner-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 147px 0 158px 0;
+}
+
+.banner-content {
+    max-width: 530px;
+}
+
+.banner-title {
+    font-family: Righteous;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 94px;
+}
+
+.banner-desc {
+    margin: 32px 0 64px;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: capitalize;
+    opacity: 0.8;
+}
+
+.banner-btn {
+    padding: 24px 40px;
+}
+
+.banner-video-btn {
+    position: relative;
+    display: flex;
+    align-items: end;
+    align-self: flex-end;
+    height: 110px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.banner-video-btn:hover {
+    color: #C99E71;
+}
+
+.banner-video-btn:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    width: 66px;
+    height: 66px;
+    border: solid #FFFFFF 2px;
+    border-radius: 50%;
+    background: url(../img/play.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+}
+
+/* ADVANTAGES */
+
+.advantage-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    padding-top: 140px;
+    font-family: Righteous;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.advantage-dark {
+    color: #C99E71;
+}
+
+.advantage-img {
+    display: block;
+    margin-top: 24px;
+}
+
+/* HISTORY */
+
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: repeat(1fr, 2);
+    gap: 32px;
+    padding-top: 140px;
+}
+
+.history-img:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.history-img:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.history-img:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 56px;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: #1C1814;
+}
+
+.history-title {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    color: #C99E71;
+}
+
+.history-subtitle {
+    margin-top: 12px;
+    font-family: Righteous;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.history-desc {
+    margin-top: 36px;
+    text-align: justify;
+    opacity: 0.8;
+}
