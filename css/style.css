@@ -39,6 +39,24 @@ button {
     cursor: pointer;
 }
 
+/* BASE */
+
+#main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 75px;
+}
+
+.header-container {
+    padding: 0 10px;
+}
+
 .primary-btn {
     padding: 20px 36px;
     font-family: Inter;
@@ -53,14 +71,20 @@ button {
     background-color: #BD864B;
 }
 
-.container {
-    max-width: 1340px;
-    margin: 0 auto;
-    padding: 0 75px;
+.title {
+    margin-bottom: 12px;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    color: #C99E71;
 }
 
-.header-container {
-    padding: 0 10px;
+.subtitle {
+    font-family: Righteous;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #FFFFFF;
 }
 
 /* HEADER */
@@ -193,7 +217,7 @@ button {
     display: flex;
     justify-content: space-between;
     gap: 36px;
-    padding-top: 140px;
+    /* padding-top: 140px; */
     font-family: Righteous;
     font-size: 24px;
     font-weight: 400;
@@ -216,7 +240,7 @@ button {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: repeat(1fr, 2);
     gap: 32px;
-    padding-top: 140px;
+    /* padding-top: 140px; */
 }
 
 .history-img:nth-child(1) {
@@ -244,24 +268,152 @@ button {
     background-color: #1C1814;
 }
 
-.history-title {
-    font-family: Urbanist;
-    font-size: 18px;
-    font-weight: 600;
-    color: #C99E71;
-}
-
-.history-subtitle {
-    margin-top: 12px;
-    font-family: Righteous;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 62px;
-    color: #FFFFFF;
-}
-
 .history-desc {
     margin-top: 36px;
     text-align: justify;
     opacity: 0.8;
+}
+
+/* PRODUCT */
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 140px; */
+}
+
+.product-title, .product-subtitle {
+    text-align: center;
+}
+
+.product-subtitle {
+    margin-bottom: 56px;
+}
+
+.product-list {
+    display: flex;
+    gap: 36px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 48px 40px 48px;
+    text-transform: uppercase;
+    background-color: #121315;
+}
+
+.product-item:hover .product-btn {
+    display: flex;
+}
+
+.product-item:hover .product-rating,
+.product-item:hover .product-item-price {
+    display: none;
+}
+
+.product-item:hover .product-item-title {
+    margin: 0;
+}
+
+.product-img {
+    margin-bottom: 36px;
+}
+
+.product-rating {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    color: #C99E71;
+}
+
+.product-rating-title {
+    font-weight: 500;
+}
+
+.poduct-rating-list {
+    display: flex;
+    gap: 4px;
+}
+
+.product-rating-item {
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.product-item-title {
+    margin: 14px 0px 20px;
+    font-family: Righteous;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.product-item-new-price {
+    font-weight: 400;
+    color: #C99E71;
+}
+
+.product-item-old-price {
+    text-decoration: line-through;
+}
+
+.product-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 38px;
+    padding: 12px 20px;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.product-link {
+    margin-top: 56px;
+    line-height: 100%;
+}
+
+/* DISCOVER */
+
+.discover-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 85px 80px;
+    background-color: #1C1814;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+}
+
+.discover-img {
+    max-height: 359px;
+    margin: 0 auto;
+}
+
+.discover-content {
+    max-width: 540px;
+}
+
+.discover-subtitle {
+    margin-bottom: 36px;
+    text-align: left;
+}
+
+.discover-desc {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: capitalize;
+    opacity: 0.8;
+    color: #FFFFFF;
+}
+
+.discover-link {
+    display: block;
+    width: 215px;
+    margin-top: 36px;
 }
