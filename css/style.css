@@ -417,3 +417,119 @@ button {
     width: 215px;
     margin-top: 36px;
 }
+
+/* MENU */
+
+.menu-title, .menu-subtitle {
+    text-align: center;
+}
+
+.menu-subtitle {
+    margin-bottom: 56px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    width: 48%;
+    border: 1px solid #32323D;
+}
+
+.menu-item-title {
+    margin-left: 20px;
+    font-family: Righteous;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.menu-item-price {
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #C99E71;
+}
+
+/* TESTIMONIAL */
+
+.comment-title, .comment-subtitle {
+    text-align: center;
+}
+
+.comment-subtitle {
+    margin-bottom: 56px;
+}
+
+.comment-list {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 36px;
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 40px;
+    background-color: #1C1814;
+}
+
+.comment-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.comment-desc {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 180%;
+    opacity: 0.8;
+    text-transform: capitalize;
+}
+
+.comment-person {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.comment-person-name {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.comment-person-post {
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 180%;
+    opacity: 0.5;
+    text-transform: capitalize;
+}
+
+.comment-rating-list {
+    display: flex;
+    gap: 4px;
+    align-self: flex-end;
+}
+
+.comment-rating-item {
+    line-height: 26px;
+    font-size: 20px;
+    color: #FAA61A;
+}
+
+/* NEWS */
+
+/* FOOTER */
