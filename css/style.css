@@ -87,6 +87,10 @@ button {
     color: #FFFFFF;
 }
 
+.dark-text {
+    color: #C99E71;
+}
+
 /* HEADER */
 
 #header-section {
@@ -457,7 +461,7 @@ button {
     color: #C99E71;
 }
 
-/* TESTIMONIAL */
+/* COMMENT */
 
 .comment-title, .comment-subtitle {
     text-align: center;
@@ -528,6 +532,125 @@ button {
     line-height: 26px;
     font-size: 20px;
     color: #FAA61A;
+}
+
+.comment-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-action-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment-progress-count {
+    font-family: Urbanist;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 135%;
+    color: #C99E71;
+}
+
+.comment-progress-bar {
+    width: 120px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.comment-progress-bar::-webkit-progress-bar {
+    border-radius: 2px;
+    background-color: #2B2826;
+}
+
+.comment-progress-bar::-webkit-progress-value {
+    border-radius: 2px;
+    background: #C99E71;
+}
+
+.comment-action-btn {
+    display: flex;
+    gap: 16px;
+}
+
+.comment-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #121315;
+    color: #FFFFFF;
+}
+
+.comment-btn-active {
+    background-color: #C99E71;
+    color: #010102;
+    cursor: pointer;
+}
+
+.comment-btn-active:hover {
+    background-color: #BD864B;
+}
+
+/* RESERVATION */
+
+.reservation-container {
+    display: flex;
+    justify-content: center;
+}
+
+.reservetion-map {
+    width: 50%;
+}
+
+.reservation-action {
+    width: 50%;
+    padding: 72px 48px;
+    background-color: #1C1814;
+}
+
+.reservation-title, .reservation-subtitle {
+    text-align: center;
+    line-height: normal;
+}
+
+.reservation-subtitle {
+    margin-bottom: 56px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation-input {
+    width: 100%;
+    height: 64px;
+    padding: 16px 20px;
+    outline: none;
+    border: none;
+    background-color: #14110E;
+    font-family: Urbanist;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 180%;
+    color: #FFFFFF;
+    opacity: 0.8;
+
+}
+
+.reservation-input:nth-child(-n+2) {
+    margin-bottom: 24px;
+}
+
+.reservation-btn {
+    width: 202px;
+    height: 62px;
+    line-height: normal;
+    margin-top: 56px;
 }
 
 /* NEWS */
